@@ -6,8 +6,143 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-  <h1>Hello, <i class="fa fa-globe"></i></h1>
+  <h1>Hello, SVG</h1>
   
+  <h3>Screen svg</h3>
+  <!-- <img src="svgs/ourFirst.svg"> -->
+
+    <svg  height="100"
+          width="100"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1">
+
+      <rect height="80" 
+            width="100"/>
+
+      <rect height="50" 
+            width="80" 
+            fill="white" 
+            x="10" y="10"/>
+
+      <rect height="10" 
+            width="40" 
+            x="30" y="90"/>
+            
+    </svg>
+
+  <h3>Phone Screen svg</h3>
+  <!-- <img src="svgs/phoneIcon.svg"> -->
+
+    <svg  height="200"
+      width="100"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1">
+
+      <rect height="100"
+            width="70"
+            fill="white"
+            stroke="#ff2626"
+            stroke-width="10"
+            x="5" y="5"
+            rx="5" ry="5"/>
+
+      <circle cx="40" cy="105" r="3"
+              fill="white"
+              class="phoneCircle"/>
+    </svg>
+
+  <h3>House</h3>
+
+    <svg  height="340"
+          width="340"
+          style="background-color: #f6f7f7;"
+          xmlns="htt://www.w3.org/2000/svg"
+          version="1.1">
+
+      <!-- Big Circle -->
+      <circle cx="170" cy="170"
+              r="162"
+              fill="#068c70"
+              stroke="#ffffff"
+              stroke-width="15"
+              class="houseCircle"/>
+
+     <!--  Chimney -->
+      <rect x="98" y="127"
+            fill="#fbf6a7"
+            width="14"
+            height="21"/>
+
+      <rect x="95" y="123"
+            fill="#e04e27"
+            width="20"
+            height="4"/>
+
+     <!--  House -->
+      <rect class="body"
+            x="90" y="198"
+            fill="#fbf6a7"
+            width="162"
+            height="84"/>
+      <!-- <rect class="roof"
+            x="80" y="148"
+            fill="e04e27"
+            width="184"
+            height="56"/> -->
+      <polygon class="roof"
+                points="256,148
+                        262,203
+                        80,203
+                        87,148
+                        327,148"/>
+
+     <!--  Door -->
+       <rect  x="153" y="222"
+              fill="#e04e27"
+              width="36"
+              height="60"/>
+       <rect  x="153" y="218"
+              fill="#e04e27"
+              width="36"
+              height="10"
+              rx="5"/>
+       <rect  x="183" y="252" 
+              fill="#fbf6a7"
+              width="2"
+              height="8"/>
+
+    <!-- Flower -->
+      <g  id="Page1" 
+          stroke="none"
+          stroke-width="1"
+          fill="none"
+          fill-rule="evenodd">
+
+        <g  id="Group">
+
+          <line x1="228" y1="267" x2="228" y2="282"
+                stroke="#068c70"
+                stroke-width="1"/>
+          <circle class="flowerOuter"
+                  fill="#ec7e23"
+                  cx="228" cy="267" 
+                  r="6"/>
+          <circle class="circleInner"
+                  fill="#fbce1d" 
+                  cx="231" cy="266" 
+                  r="2"/>
+        </g>
+      </g>
+     <!-- Text -->
+      <text x="85" y="97"
+            font-size="60"
+            color="#3e9fd8"
+            stroke="#ffffff"
+            stroke-width="2"
+            >HOME</text>
+    </svg>
+
+
   <script src="js/main.js"></script>
 </body>
 </html>
